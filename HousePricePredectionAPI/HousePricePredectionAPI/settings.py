@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'api',
     'crispy_forms',
-    'bootstrap4',
+    'crispy_bootstrap4',
 ]
 
 MIDDLEWARE = [
