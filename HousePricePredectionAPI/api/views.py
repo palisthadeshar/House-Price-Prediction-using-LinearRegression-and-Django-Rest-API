@@ -29,22 +29,22 @@ def index(request):
     return Response(return_data)
 
 
-# @api_view(["POST"]) 
-# def pricepredict(data):
-#         try:
+@api_view(["POST"]) 
+def pricepredict(data):
+        try:
            
-#             feature_names = ['area', 'bedrooms', 'bathrooms', 'stories', 'mainroad', 'guestroom', 'basement', 'hotwaterheating', 'airconditioning', 'parking', 'prefarea', 'semi_furnished', 'unfurnished']
-#             input_df = pd.DataFrame(np.array([data]).reshape(1,-1), columns=feature_names)
-#             # price_info = np.array(list(price_predict_info.values()))
-#             lin_reg_model = ApiConfig.model
-#             price_predicted = lin_reg_model.predict(input_df)
-#             price_predicted = int(price_predicted[0])
-#             # response_dict = {
-#             #                  "Predicted price": price_predicted
-#             #         }
-#             return ("Predicted price: ",price_predicted)
-#         except ValueError as ve:
-#             return Response(ve.args[0],status.HTTP_400_BAD_REQUEST)
+            feature_names = ['area', 'bedrooms', 'bathrooms', 'stories', 'mainroad', 'guestroom', 'basement', 'hotwaterheating', 'airconditioning', 'parking', 'prefarea', 'semi_furnished', 'unfurnished']
+            input_df = pd.DataFrame(np.array([data]).reshape(1,-1), columns=feature_names)
+            # price_info = np.array(list(price_predict_info.values()))
+            lin_reg_model = ApiConfig.model
+            price_predicted = lin_reg_model.predict(input_df)
+            price_predicted = int(price_predicted[0])
+            # response_dict = {
+            #                  "Predicted price": price_predicted
+            #         }
+            return ("Predicted price: ",price_predicted)
+        except ValueError as ve:
+            return Response(ve.args[0],status.HTTP_400_BAD_REQUEST)
 
 # @api_view(["POST"])
 # @renderer_classes([StaticHTMLRenderer]) 

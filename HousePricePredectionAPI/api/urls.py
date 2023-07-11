@@ -13,6 +13,6 @@ urlpatterns = [
     path('',views.input,name='myform'),
     path('api/',include(router.urls)),
     # path('status/', views.pricepredict),
-    # path('price/', views.pricepredict, name = 'price_prediction'),
+    path('price/', views.pricepredict, name = 'price_prediction'),
    
 ]
