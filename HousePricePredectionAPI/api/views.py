@@ -145,31 +145,3 @@ def input(request):
     return render(request, "form.html", {"form": form})
 
 
-# {"area":6400,
-# "bedrooms":3,
-# "bathrooms":2,
-# "stories":2,
-# "mainroad":"yes",
-# "guestroom":"yes",
-# "basement":"no",
-# "hotwaterheating":"yes",
-# "airconditioning":"yes",
-# "parking":2,
-# "prefarea":no,
-# "semi_furnished":1,
-# "unfurnished":0
-# }
-# {"area":6400,
-# "bedrooms":3,
-# "bathrooms":2,
-# "stories":2,
-# "mainroad":1,
-# "guestroom":0,
-# "basement":1,
-# "hotwaterheating":0,
-# "airconditioning":1,
-# "parking":2,
-# "prefarea":1,
-# "semi_furnished":1,
-# "unfurnished":0
-# }
