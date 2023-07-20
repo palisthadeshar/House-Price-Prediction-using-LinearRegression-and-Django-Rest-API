@@ -32,5 +32,5 @@ py manage.py runserver
 Then open http://127.0.0.1:8000// on web browser. Enter the input data and click on predict. 
 To use Django default REST FrameWork open http://127.0.0.1:8000/price/. Input data in JSON format and click on post.
 
-![Input data in JSON format](image.png)
-![Predicted Price](image-1.png)
+![Input data in JSON format](images/image.png)
+![Predicted Price](images/image-1.png)
